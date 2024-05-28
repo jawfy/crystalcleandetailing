@@ -11,6 +11,7 @@
 
 .body {
   background-color: #0c0c0c;
+  height: 100%;
   font-family: loos-normal, sans-serif;
   font-weight: 400;
 }
@@ -24,7 +25,7 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   display: flex;
 }
 
@@ -220,6 +221,8 @@
   .logo-wrapper {
     grid-column-gap: 32px;
     grid-row-gap: 32px;
+    justify-content: center;
+    align-items: center;
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -230,7 +233,6 @@
 
   .heading {
     text-align: center;
-    font-size: 24px;
     font-weight: 500;
     line-height: 24px;
   }
@@ -244,6 +246,10 @@
     flex-flow: column;
     justify-content: space-between;
     align-items: flex-start;
+  }
+
+  .text-block {
+    font-size: 16px;
   }
 
   .button-block {
@@ -263,10 +269,18 @@
     line-height: 18px;
   }
 
+  .div-block {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+
   .sub-copy-flex-box {
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   .divider {

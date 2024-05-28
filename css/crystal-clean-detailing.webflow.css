@@ -1,0 +1,71 @@
+:root {
+  --white: white;
+  --black: black;
+}
+
+.body {
+  background-color: #0c0c0c;
+  font-family: loos-normal, sans-serif;
+  font-weight: 400;
+}
+
+.logo-wrapper {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  background-image: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url('../images/DSC06410-min.jpg');
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+
+.logo {
+  width: 12%;
+}
+
+.heading {
+  color: #fff;
+  letter-spacing: 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 991px) {
+  .logo {
+    width: 32%;
+  }
+
+  .heading {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .logo-wrapper {
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+  }
+
+  .logo {
+    width: 64%;
+  }
+
+  .heading {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+}
+
+
